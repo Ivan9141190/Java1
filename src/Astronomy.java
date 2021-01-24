@@ -4,8 +4,6 @@ public class Astronomy {
         final Double π = 3.14;
         Double S = 4 * π * r * r;
 
-        System.out.println(S);
-
         return r;
 
     }
@@ -39,11 +37,11 @@ public class Astronomy {
 
     public static void main(String[] args) {
 
-        earthSquare();
-        mercurySquare();
-        jupiterSquare();
-        earthVsMercury();
-        earthVsJupiter();
+        System.out.println(earthSquare());
+        System.out.println(mercurySquare());
+        System.out.println(jupiterSquare());
+        System.out.println(earthVsMercury());
+        System.out.println(earthVsJupiter());
     }
 }
 

@@ -1,10 +1,13 @@
 package ru.progwards.java1.lessons;
 
 public class AccuracyDoubleFloat {
+
+
+
     public static double volumeBallDouble(double radius){
 
         final Double π = 3.14;
-        Double S = 4 * π * radius * radius;
+        Double S = 4/3 * π * radius * radius;
 
         System.out.println("Обьем double "+S);
         return radius;
@@ -13,7 +16,7 @@ public class AccuracyDoubleFloat {
     }
     public static float volumeBallFloat(float radius){
         final Double π = 3.14;
-        float S = (float) (4 * π * radius * radius);
+        float S = (float) (4/3 * π * radius * radius);
 
         System.out.println("Обьем float " +S);
         return radius;
