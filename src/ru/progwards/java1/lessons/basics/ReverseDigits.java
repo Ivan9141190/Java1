@@ -8,6 +8,7 @@ package ru.progwards.java1.lessons.basics;
             System.out.print(number / 10 % 10);
             System.out.println(number / 100 % 10);
 
+
             return number;
 
         }
