@@ -24,8 +24,8 @@ public class AccuracyDoubleFloat {
     }
 
     public static double calculateAccuracy(double radius){
-        float f =  volumeBallFloat((float)(radius));
-        Double d = volumeBallDouble(radius);
+        Float d =  volumeBallFloat((float)(radius));
+        Double f = volumeBallDouble(radius);
 
         System.out.print("разница double-float " );
         System.out.println(d-f);
