@@ -11,7 +11,7 @@ public class AccuracyDoubleFloat {
         Double S = 4/3 * π * radius * radius;
 
         System.out.println("Обьем double "+S);
-        return radius;
+        return S;
 
 
     }
@@ -20,7 +20,7 @@ public class AccuracyDoubleFloat {
         float S = (float) (4/3 * π * radius * radius);
 
         System.out.println("Обьем float " +S);
-        return radius;
+        return S;
     }
 
     public static double calculateAccuracy(double radius){
