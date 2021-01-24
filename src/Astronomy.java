@@ -1,4 +1,5 @@
 public class Astronomy {
+
     public static Double sphereSquare(Double r) {
 
         final Double π = 3.14;
@@ -9,18 +10,18 @@ public class Astronomy {
     }
 
     public static Double earthSquare() {
-
-        return sphereSquare(6371.2);
+          Double r = 6371.2;
+        return sphereSquare(r);
     }
 
     public static Double mercurySquare() {
-
-        return sphereSquare(2439.7);
+            Double r = 2439.7;
+        return sphereSquare(r);
     }
 
     public static Double jupiterSquare() {
-
-        return sphereSquare(71492.0);
+          Double r = 71492.0;
+        return sphereSquare(r);
 
     }
 
