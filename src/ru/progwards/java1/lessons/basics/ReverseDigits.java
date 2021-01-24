@@ -15,7 +15,7 @@ package ru.progwards.java1.lessons.basics;
 
         public static void main(String[] args) {
 
-            reverseDigits(789);
+
 
 
         }
