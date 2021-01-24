@@ -5,8 +5,8 @@ public class Astronomy {
 
         final Double π = 3.14;
         Double S = 4 * π * r * r;
-
-        return r;
+        System.out.println(S);
+        return S;
 
     }
 
@@ -38,7 +38,7 @@ public class Astronomy {
 
 
     public static void main(String[] args) {
-
+        System.out.println(sphereSquare(600.9025547460243));
         System.out.println(earthSquare());
         System.out.println(mercurySquare());
         System.out.println(jupiterSquare());
