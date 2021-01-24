@@ -29,7 +29,7 @@ public class AccuracyDoubleFloat {
 
         System.out.print("разница double-float " );
         System.out.println(d-f);
-        return radius;
+        return d-f;
     }
 
 
