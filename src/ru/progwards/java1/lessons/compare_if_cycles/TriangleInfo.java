@@ -1,4 +1,6 @@
-package java1.lessons.compare_if_cycles;
+package ru.progwards.java1.lessons.compare_if_cycles;
+
+
 
 public class TriangleInfo {
 
@@ -18,4 +20,3 @@ public class TriangleInfo {
         System.out.println(isRightTriangle(9,3,8));
     }
 }
-

@@ -1,4 +1,4 @@
-package java1.lessons.compare_if_cycles;
+package ru.progwards.java1.lessons.compare_if_cycles;
 
 public class TriangleSimpleInfo {
 
@@ -37,5 +37,5 @@ public class TriangleSimpleInfo {
         System.out.println(minSide(1,2,1));
         System.out.println(isEquilateralTriangle(2,2,2));
     }
-}
 
+}
