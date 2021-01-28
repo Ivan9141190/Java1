@@ -27,6 +27,8 @@ public class TriangleSimpleInfo {
         }
         return 0;
     }
+
+
     public static boolean isEquilateralTriangle(int a, int b, int c) {
         boolean result = a == b && a == c;
         return result;
