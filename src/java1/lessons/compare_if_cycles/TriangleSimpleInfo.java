@@ -31,7 +31,6 @@ public class TriangleSimpleInfo {
         return result;
     }
 
-
     public static void main(String[] args) {
         System.out.println(maxSide(1,3,3));
         System.out.println(minSide(1,2,1));
