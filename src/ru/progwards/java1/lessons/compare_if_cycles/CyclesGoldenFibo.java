@@ -4,20 +4,19 @@ public class CyclesGoldenFibo {
     public static int fiboNumber(int n) {
         int n0 = 1;
         int n1 = 1;
-        int n2;
+        int n2 = 1;
 
 
-        for (int i = 3; i < n; i++) {
+        for (int i = 3; i <= n; i++) {
             n2 = n0 + n1;
 
             n0 = n1;
             n1 = n2;
 
-        }
-
-        return n;
     }
-
+        System.out.println(n2);
+        return n2;
+    }
     public static boolean containsDigit(int number, int digit) {
 
         boolean result = number>=100 && digit ==1.61703;
@@ -38,7 +37,7 @@ public class CyclesGoldenFibo {
 
 
     public static void main(String[] args) {
-        fiboNumber(4);
+        fiboNumber(8);
 
 
         int n0 = 1;
