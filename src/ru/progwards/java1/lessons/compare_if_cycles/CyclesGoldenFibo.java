@@ -29,6 +29,7 @@ public class CyclesGoldenFibo {
     return result;
     }
 
+
     public static void main(String[] args) {
         fiboNumber(4);
 
