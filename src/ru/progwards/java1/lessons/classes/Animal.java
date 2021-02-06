@@ -26,6 +26,7 @@ public class Animal {
     FoodKind UNKNOWN = FoodKind.UNKNOWN;
     FoodKind HAY = FoodKind.HAY;
     FoodKind CORN = FoodKind.CORN;
+
     public FoodKind getFoodKind() {
         return UNKNOWN;
     }
@@ -34,8 +35,8 @@ public class Animal {
     public String toString() {
         return "I am " + getKind() + " eat " + getFoodKind();
     }
-
-    static class Cow extends Animal {
+}
+     class Cow extends Animal {
 
         public AnimalKind getKind() {
             return COW;
@@ -55,19 +56,20 @@ class Hamster extends Cow {
     }
 }
     class Duck extends Hamster {
-        public AnimalKind getKind(){
+        public AnimalKind getKind() {
             return DUCK;
         }
-        public FoodKind getFoodKind(){
+
+        public FoodKind getFoodKind() {
             return CORN;
         }
-    }
 
 
-    public static void main(String[] args) {
-        Animal animal = new Animal(2);
-        Cow cow = new Cow();
-        System.out.println(animal);
-        System.out.println(cow);
+        public static void main(String[] args) {
+            Animal animal = new Animal(2);
+            Cow cow = new Cow();
+            Duck duck = new Duck();
+            System.out.println(animal);
+            System.out.println(cow);
+        }
     }
-}
