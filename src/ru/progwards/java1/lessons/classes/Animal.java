@@ -93,6 +93,24 @@ class Hamster extends Animal {
     public double getFoodCoeff(){
         return 0.03;}
 }
+
+class ComplexNum {
+    int a; // действительная часть
+    int b; // мнимая часть
+
+    public ComplexNum(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
+    @Override
+    public String toString() {
+        return a + "+" + b + "i";
+    }
+}
+
+
+
     class Duck extends Animal {
 
         Duck(double weight) {
@@ -106,22 +124,39 @@ class Hamster extends Animal {
         public FoodKind getFoodKind() {
             return CORN;
         }
-        public double getWeight(){
+
+        public double getWeight() {
             return weight;
         }
-        public double getFoodCoeff(){
-            return 0.04;}
 
-        public static void main(String[] args) {
-            Animal animal = new Animal(1);
-            Cow cow = new Cow(1);
-            Duck duck = new Duck(1);
-            Hamster hamster = new Hamster(1);
-            System.out.println(animal);
-            System.out.println(cow);
-            System.out.println(duck);
-            System.out.println(hamster);
-
-
+        public double getFoodCoeff() {
+            return 0.04;
         }
-    }
+
+
+
+            public static void main(String[] args) {
+
+                Animal animal = new Animal(1);
+                Cow cow = new Cow(1);
+                Duck duck = new Duck(1);
+                Hamster hamster = new Hamster(1);
+                System.out.println(animal);
+                System.out.println(cow);
+                System.out.println(duck);
+                System.out.println(hamster);
+
+               ComplexNum complexNum = new ComplexNum(2, 2);
+                System.out.println(complexNum);
+             //   int a, b, c, n = 7;
+//            a=2;b=5;
+//
+//            for (int i = 0; i <= n; i++) {
+//                c=a+b;
+//                a=b;
+//                b=c;
+//
+//                System.out.println(c);
+            }
+        }
+
