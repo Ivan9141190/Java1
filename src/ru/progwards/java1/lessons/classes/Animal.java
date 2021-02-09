@@ -94,20 +94,6 @@ class Hamster extends Animal {
         return 0.03;}
 }
 
-class ComplexNum {
-    int a; // действительная часть
-    int b; // мнимая часть
-
-    public ComplexNum(int a, int b) {
-        this.a = a;
-        this.b = b;
-    }
-
-    @Override
-    public String toString() {
-        return a + "+" + b + "i";
-    }
-}
 
 
 
@@ -146,17 +132,18 @@ class ComplexNum {
                 System.out.println(duck);
                 System.out.println(hamster);
 
-               ComplexNum complexNum = new ComplexNum(2, 2);
-                System.out.println(complexNum);
-             //   int a, b, c, n = 7;
+//                ComplexNum complexNum = new ComplexNum(2, 2);
+//                System.out.println(complexNum);
+
+                int a, b, c;
 //            a=2;b=5;
 //
-//            for (int i = 0; i <= n; i++) {
-//                c=a+b;
-//                a=b;
-//                b=c;
-//
-//                System.out.println(c);
-            }
-        }
+                for ( a = 10, b = 20, c =31; a+b <=c;  a++) {
+               c=a+b;
+                a=b;
+                b=c;
+//if (a == 3)
+                System.out.println(a);
+                }
+            }  }
 
