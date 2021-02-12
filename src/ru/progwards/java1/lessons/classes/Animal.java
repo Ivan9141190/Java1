@@ -132,18 +132,11 @@ class Hamster extends Animal {
                 System.out.println(duck);
                 System.out.println(hamster);
 
-//                ComplexNum complexNum = new ComplexNum(2, 2);
-//                System.out.println(complexNum);
 
-                int a, b, c;
-//            a=2;b=5;
-//
-                for ( a = 10, b = 20, c =31; a+b <=c;  a++) {
-               c=a+b;
-                a=b;
-                b=c;
-//if (a == 3)
-                System.out.println(a);
-                }
-            }  }
+
+                int a = 5, b, c, i, n = 5;
+                for (i=1; i<=n; i++)
+                    if (i==a)
+                    System.out.println(i);
+            }}
 
