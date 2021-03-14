@@ -3,7 +3,7 @@ package ru.progwards.java1.lessons.arrays;
 import java.util.Arrays;
 
 public class Eratosthenes {
-    int N = 75;
+    int N = 1000;
     private boolean[] sieve = new boolean[N];{
         Arrays.fill(sieve,true);
         for (int i = 2; i < sieve.length; i++) {
