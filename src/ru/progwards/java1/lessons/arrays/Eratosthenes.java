@@ -3,7 +3,7 @@ package ru.progwards.java1.lessons.arrays;
 import java.util.Arrays;
 
 public class Eratosthenes {
-    int N = 60;
+    int N = 10;
     private boolean[] sieve = new boolean[N];{
         Arrays.fill(sieve,true);
         for (int i = 2; i < sieve.length; i++) {
@@ -37,10 +37,28 @@ public class Eratosthenes {
             }
         }
     }
-    public boolean isSimple(int n) {
-      return   n >= 0 && n < sieve.length  ? sieve[n] : false;
+    public boolean isSimple(int N) {
+        boolean n = true;
+        for (int i = 2; i <= N; i++) {
+            n = true;
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    n = false;
+                    //break;
+                }
+            }
+            if (n) {
+
+                System.out.println(i + "  " + n);
+
+            } else
+                System.out.println(i + " " + n);
 
         }
+
+        return n ;
+    }
+
     public static void main(String[] args) {
         Eratosthenes era = new Eratosthenes(80);
         era.sift();
