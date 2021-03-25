@@ -47,13 +47,14 @@ public class Eratosthenes {
                         //break;
                     }
                 }
-                if (b) {
-                    System.out.println(i + "  " + b);
-                } else
-                    System.out.println(i + " " + b);
+//                if (b) {
+//                    System.out.println(i + "  " + b);
+//                } else
+//                    System.out.println(i + " " + b);
+//            }
             }
-            return b ;
-        }
+                return b;
+            }
         //return n >0 && n <= sieve.length ? sieve[n] : false;
 
     public static class ArraySort {
