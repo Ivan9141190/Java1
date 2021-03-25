@@ -60,7 +60,8 @@ public class Eratosthenes {
     public static class ArraySort {
 
         public static void sort(int[] a){
-
+            a = new int[] {};
+              ArraySort arraySort = new ArraySort();
             for (int i = 0; i < a.length; i++) {
                 int num = a[i];
 
@@ -75,6 +76,7 @@ public class Eratosthenes {
                     }
                 }
             }
+
             for (int n : a) {
                 System.out.println(n);
             }
@@ -91,8 +93,8 @@ public class Eratosthenes {
 
         System.out.println(Arrays.toString(era.sieve));
         System.out.println(era.isSimple(11));
-        int a[] = new int[] {};
-      ArraySort arraySort = new ArraySort();
+          int a[] = new int[] {};
+        ArraySort arraySort = new ArraySort();
         arraySort.sort(a);
 
     }}
