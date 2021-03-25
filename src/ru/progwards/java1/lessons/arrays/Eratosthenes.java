@@ -59,25 +59,25 @@ public class Eratosthenes {
 
     public static class ArraySort {
 
-        public static void sort(int[] a){
-            a = new int[] {};
-              ArraySort arraySort = new ArraySort();
-            for (int i = 0; i < a.length; i++) {
-                int num = a[i];
+        public static void sort(int[] ArraySort){
+            ArraySort = new int[] {121,434,3443};
+
+            for (int i = 0; i < ArraySort.length; i++) {
+                int num = ArraySort[i];
 
                 for (int j = i - 1; j >= 0; j--) {
-                    int leftnumber = a[j];
+                    int leftnumber = ArraySort[j];
 
                     if (num < leftnumber) {
-                        a[j + 1] = leftnumber;
-                        a[j] = num;
+                        ArraySort[j + 1] = leftnumber;
+                        ArraySort[j] = num;
                     } else {
                         break;
                     }
                 }
             }
 
-            for (int n : a) {
+            for (int n : ArraySort) {
                 System.out.println(n);
             }
         }
