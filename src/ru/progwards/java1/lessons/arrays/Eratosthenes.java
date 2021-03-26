@@ -47,43 +47,11 @@ public class Eratosthenes {
                         //break;
                     }
                 }
-//                if (b) {
-//                    System.out.println(i + "  " + b);
-//                } else
-//                    System.out.println(i + " " + b);
-//            }
+
             }
                 return b;
             }
-        //return n >0 && n <= sieve.length ? sieve[n] : false;
 
-//      static class ArraySort {
-//
-//        public static void sort(int[] a){
-//        a = new int[] {121,434,3443};
-//
-//            for (int i = 0; i < a.length; i++) {
-//                int num = a[i];
-//
-//                for (int j = i - 1; j >= 0; j--) {
-//                    int leftnumber = a[j];
-//
-//                    if (num < leftnumber) {
-//                        a[j + 1] = leftnumber;
-//                        a[j] = num;
-//                    } else {
-//                        break;
-//                    }
-//                }
-//            }
-//
-//            for (int n : a) {
-//                System.out.println(n);
-//            }
-//        }
-//
-//
-//    }
     public static void main(String[] args) {
         Eratosthenes era = new Eratosthenes(80);
         era.sift();
@@ -93,9 +61,10 @@ public class Eratosthenes {
 
         System.out.println(Arrays.toString(era.sieve));
         System.out.println(era.isSimple(11));
-          int a[] = new int[] {};
+          int a[] = new int[] {-1,-3,-3,33,33,22};
         ArraySort arraySort = new ArraySort();
         arraySort.sort(a);
+        System.out.println(Arrays.toString(a));
 
     }}
 

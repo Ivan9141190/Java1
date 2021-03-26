@@ -1,26 +1,28 @@
 package ru.progwards.java1.lessons.arrays;
 
-public class ArraySort { public static void sort(int[] a) {
+class ArraySort {
 
-    ArraySort arraySort = new ArraySort();
+    public static void sort(int[] a) {
 
-    a = new int[] {121,54,45,454,};
-    for (int i = 0; i < a.length; i++) {
-        int num = a[i];
+       // ArraySort arraySort = new ArraySort();
 
-        for (int j = i - 1; j >= 0; j--) {
-            int leftnumber = a[j];
+        //a = new int[]{121, 54, 45, 454, -12, -2222};
+        for (int i = 0; i < a.length; i++) {
+            int num = a[i];
 
-            if (num < leftnumber) {
-                a[j + 1] = leftnumber;
-                a[j] = num;
-            } else {
-                break;
+            for (int j = i - 1; j >= 0; j--) {
+                int leftnumber = a[j];
+
+                if (num < leftnumber) {
+                    a[j + 1] = leftnumber;
+                    a[j] = num;
+                } else {
+                    break;
+                }
             }
-        }
-    }
-    for (int n : a) {
-        System.out.println(n);
-    }
-}
-}
+       }}}
+//        for (int n : a)
+//            System.out.println(n);
+//    }}
+
+
