@@ -21,13 +21,19 @@ class DIntArray {
         this.arr2=arr2;
 
     }
-
+    public void atInsert(int pos, int num){
+        int [] arr2  =new int [arr.length+1];
+        System.arraycopy(arr,0,arr2,0,arr.length);
+        arr2 [arr.length]= num;
+        this.arr2=arr2;
+    }
     public static void main(String[] args) {
 
-            DIntArray dIntArray = new DIntArray();
-        System.out.println(Arrays.toString(dIntArray.arr));
-        dIntArray.add(444);
-        System.out.println(Arrays.toString(dIntArray.arr2));
+
+//            DIntArray dIntArray = new DIntArray();
+//        System.out.println(Arrays.toString(dIntArray.arr));
+//        dIntArray.add(444);
+//        System.out.println(Arrays.toString(dIntArray.arr2));
         int [] arr = {1,2,2,2,2,2,};
 
         int [] arr2  =new int [arr.length+1];

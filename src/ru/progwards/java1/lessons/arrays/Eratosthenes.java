@@ -63,6 +63,9 @@ public class Eratosthenes {
         ArraySort arraySort = new ArraySort();
         arraySort.sort(a);
         System.out.println(Arrays.toString(a));
-
+        DIntArray dIntArray = new DIntArray();
+        System.out.println(Arrays.toString(dIntArray.arr));
+        dIntArray.add(444);
+        System.out.println(Arrays.toString(dIntArray.arr2));
     }}
 
