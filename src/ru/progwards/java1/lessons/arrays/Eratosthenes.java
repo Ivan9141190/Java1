@@ -55,9 +55,7 @@ public class Eratosthenes {
     public static void main(String[] args) {
         Eratosthenes era = new Eratosthenes(80);
         era.sift();
-       // for ( int i = 2; i< era.sieve.length; i++)
 
-         //   System.out.println(i + " " + era.isSimple(i));
 
         System.out.println(Arrays.toString(era.sieve));
         System.out.println(era.isSimple(11));
