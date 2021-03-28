@@ -2,7 +2,7 @@ package ru.progwards.java1.lessons.arrays;
 
 import java.util.Arrays;
 
-public class DIntArray {
+class DIntArray {
     int [] arr = {1,2,2,2,2,2,};
 
     int [] arr2  =new int [arr.length+1];
