@@ -15,10 +15,10 @@ class DIntArray {
 
     public void add(int num){
         int [] arr = {1,2,2,2,2,2,};
-        int [] arr2  =new int [arr.length+1];
-        System.arraycopy(arr,0,arr2,0,arr.length);
-        arr2 [arr.length]= num;
-        this.arr2=arr2;
+        int [] arr3  =new int [arr.length+1];
+        System.arraycopy(arr,0,arr3,0,arr.length);
+        arr3 [arr.length]= num;
+        this.arr3=arr3;
 
     }
     public void atInsert(int pos, int num){
@@ -33,6 +33,7 @@ class DIntArray {
     public int at(int pos){
 
         return arr3  [pos] ;
+
     }
 
 
