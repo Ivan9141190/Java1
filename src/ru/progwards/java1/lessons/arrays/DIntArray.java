@@ -29,10 +29,13 @@ class DIntArray {
         arr3 [pos]= num;
         this.arr3=arr3;
     }
-    public void atDelete(int pos){}
+    public void atDelete(int pos){ }
     public int at(int pos){
+
         return 0;
     }
+
+
     public static void main(String[] args) {
 
 
