@@ -1,6 +1,7 @@
 package ru.progwards.java1.lessons.arrays;
 
 import java.util.Arrays;
+
 class DIntArray {
     int [] arr = {1,2,2,2,2,2,};
 
@@ -27,6 +28,10 @@ class DIntArray {
         System.arraycopy(arr,pos,arr3,pos+1,arr.length-pos);
         arr3 [pos]= num;
         this.arr3=arr3;
+    }
+    public void atDelete(int pos){}
+    public int at(int pos){
+        return 0;
     }
     public static void main(String[] args) {
 
