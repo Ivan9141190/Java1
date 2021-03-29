@@ -32,7 +32,7 @@ class DIntArray {
     public void atDelete(int pos){ }
     public int at(int pos){
 
-        return arr2  [pos] ;
+        return arr3  [pos] ;
     }
 
 
