@@ -3,7 +3,7 @@ package ru.progwards.java1.lessons.arrays;
 import java.util.Arrays;
 
 class DIntArray {
-    int [] arr = {1,2,2,2,2,2,};
+    int [] arr = {222};
 
     int [] arr2  =new int [arr.length+1];
     int [] arr3  =new int [arr.length+1];
@@ -14,7 +14,7 @@ class DIntArray {
         }
 
     public void add(int num){
-        int [] arr = {1,2,2,2,2,2,};
+        //int [] arr = {1,2,2,2,2,2,};
         int [] arr3  =new int [arr.length+1];
         System.arraycopy(arr,0,arr3,0,arr.length);
         arr3 [arr.length]= num;
@@ -22,7 +22,7 @@ class DIntArray {
 
     }
     public void atInsert(int pos, int num){
-        int [] arr = {1,2,2,2,2,2,};
+        int [] arr = {1,2,4,4,4,};
         int [] arr3  =new int [arr.length+1];
         System.arraycopy(arr,0,arr3,0,pos);
         System.arraycopy(arr,pos,arr3,pos+1,arr.length-pos);
