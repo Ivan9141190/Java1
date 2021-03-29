@@ -67,5 +67,7 @@ public class Eratosthenes {
         System.out.println(Arrays.toString(dIntArray.arr));
         dIntArray.add(444);
         System.out.println(Arrays.toString(dIntArray.arr2));
+        dIntArray.atInsert(1,3333);
+        System.out.println(Arrays.toString(dIntArray.arr3));
     }}
 
