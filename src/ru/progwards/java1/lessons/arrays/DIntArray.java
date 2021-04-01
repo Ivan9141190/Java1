@@ -14,10 +14,10 @@ class DIntArray {
         }
 
     public  void add(int num){
-int []arr = {1,1,1,1,1,1};
+int []arr = {};
         int [] arr3  =new int [arr.length+1];
         System.arraycopy(arr,0,arr3,0,arr.length);
-        arr3 [arr3.length - arr3.length]= num;
+        arr3 [0]= num;
        this.arr=arr3;
     }
 
@@ -29,7 +29,15 @@ int []arr = {1,1,1,1,1,1};
         arr3 [pos]= num;
        this.arr=arr3;
 }
-    public void atDelete(int pos){ }
+    public void atDelete(int pos){
+      int arr [] = new int[]{1, 2, 3, 4, 5};
+        int [] arr3  =new int [arr.length];
+        System.arraycopy(arr,0,arr3,0,pos-1);
+        System.arraycopy(arr,pos+1,arr3,pos+1,arr.length-pos-1);
+
+        this.arr=arr3;
+
+    }
     public int at(int pos){
 
         return arr  [pos] ;
