@@ -30,7 +30,7 @@ int []arr = {1,3,3,3,3,3,3};
        this.arr=arr3;
 }
     public void atDelete(int pos){
-      int arr [] = new int[]{1,1,1,1,1,1,1,};
+    //  int arr [] = new int[]{1,1,1,1,1,1,1,};
         int [] arr3  =new int [arr.length-1];
         System.arraycopy(arr,pos,arr3,0,arr.length-pos);
        //System.arraycopy(arr,pos,arr3,pos,arr.length-pos-1);
