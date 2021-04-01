@@ -40,7 +40,7 @@ int []arr = {1,3,3,3,3,3,3};
     }
     public int at(int pos){
 
-        return arr  [pos] ;
+        return arr  [0] ;
 
     }
 
