@@ -31,9 +31,9 @@ int []arr = {};
 }
     public void atDelete(int pos){
       int arr [] = new int[]{1, 2, 3, 4, 5};
-        int [] arr3  =new int [arr.length];
-        System.arraycopy(arr,0,arr3,0,pos-1);
-        System.arraycopy(arr,pos+1,arr3,pos+1,arr.length-pos-1);
+        int [] arr3  =new int [arr.length-1];
+        System.arraycopy(arr,pos,arr3,0,arr.length-pos);
+       //System.arraycopy(arr,pos,arr3,pos,arr.length-pos-1);
 
         this.arr=arr3;
 
