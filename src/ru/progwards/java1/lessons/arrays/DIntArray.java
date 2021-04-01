@@ -16,8 +16,8 @@ class DIntArray {
     public  void add(int num){
 int [] arr = {1,3,3,3,3,3,3};
         int [] arr3  =new int [arr.length+1];
-        System.arraycopy(arr,1,arr3,1,arr.length-1);
-        arr3 [0]= num;
+        System.arraycopy(arr,0,arr3,0,arr.length);
+        arr3 [arr.length]= num;
        this.arr=arr3;
     }
 
