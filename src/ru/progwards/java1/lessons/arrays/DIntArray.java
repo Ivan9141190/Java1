@@ -14,7 +14,7 @@ class DIntArray {
         }
 
     public  void add(int num){
-int []arr = {1,3,3,3,3,3,3};
+int [] arr = {1,3,3,3,3,3,3};
         int [] arr3  =new int [arr.length+1];
         System.arraycopy(arr,1,arr3,1,arr.length-1);
         arr3 [0]= num;
@@ -39,8 +39,8 @@ int []arr = {1,3,3,3,3,3,3};
 
     }
     public int at(int pos){
-
-        return arr  [0] ;
+int [] arr = {1,2,3,4,5,6,7,8};
+        return arr  [pos] ;
 
     }
 
