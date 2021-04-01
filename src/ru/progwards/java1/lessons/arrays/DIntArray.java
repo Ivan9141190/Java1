@@ -18,7 +18,7 @@ int []arr = {1,1,1,1,1,1};
         int [] arr3  =new int [arr.length+1];
         System.arraycopy(arr,0,arr3,0,arr.length);
         arr3 [0]= num;
-      // this.arr3=arr3;
+       this.arr=arr3;
 
     }
     public void atInsert(int pos, int num){
@@ -27,7 +27,7 @@ int []arr = {1,1,1,1,1,1};
         System.arraycopy(arr,0,arr3,0,pos);
         System.arraycopy(arr,pos,arr3,pos+1,arr.length-pos);
         arr3 [pos]= num;
-      // this.arr3=arr3;
+       this.arr=arr3;
 }
     public void atDelete(int pos){ }
     public int at(int pos){
@@ -43,7 +43,7 @@ int []arr = {1,1,1,1,1,1};
             DIntArray dIntArray = new DIntArray();
         System.out.println(Arrays.toString(dIntArray.arr));
       //  dIntArray.atInsert(3,444);
-        System.out.println(Arrays.toString(dIntArray.arr3));
+        System.out.println(Arrays.toString(dIntArray.arr));
 
 
        // int [] arr = {1,2,2,2,2,2,};
