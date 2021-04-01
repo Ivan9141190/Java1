@@ -17,10 +17,10 @@ class DIntArray {
 int []arr = {1,1,1,1,1,1};
         int [] arr3  =new int [arr.length+1];
         System.arraycopy(arr,0,arr3,0,arr.length);
-        arr3 [0]= num;
+        arr3 [arr3.length - arr3.length]= num;
        this.arr=arr3;
-
     }
+
     public void atInsert(int pos, int num){
         int [] arr = {1,1,1,1,1,1,1,1,1,1,1,1,1,11,1,1,1,1,1,1,1,11};
         int [] arr3  =new int [arr.length+1];
