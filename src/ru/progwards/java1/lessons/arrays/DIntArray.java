@@ -6,7 +6,7 @@ class DIntArray {
     int [] arr = {222,555};
 
     //int [] arr2  =new int [arr.length+1];
-    int [] arr3  =new int [arr.length+1];
+    //int [] arr3  =new int [arr.length+1];
 
     public static void copy(int [] a, int [] b) {
         for (int i = 0; i < a.length; i++)
@@ -18,7 +18,7 @@ int []arr = {1,1,1,1,1,1};
         int [] arr3  =new int [arr.length+1];
         System.arraycopy(arr,0,arr3,0,arr.length);
         arr3 [0]= num;
-       this.arr3=arr3;
+      // this.arr3=arr3;
 
     }
     public void atInsert(int pos, int num){
@@ -27,12 +27,12 @@ int []arr = {1,1,1,1,1,1};
         System.arraycopy(arr,0,arr3,0,pos);
         System.arraycopy(arr,pos,arr3,pos+1,arr.length-pos);
         arr3 [pos]= num;
-        this.arr3=arr3;
+      // this.arr3=arr3;
 }
     public void atDelete(int pos){ }
     public int at(int pos){
 
-        return arr3  [pos] ;
+        return arr  [pos] ;
 
     }
 
