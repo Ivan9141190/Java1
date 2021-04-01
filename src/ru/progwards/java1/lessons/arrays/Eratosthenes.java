@@ -65,7 +65,7 @@ public class Eratosthenes {
         System.out.println(Arrays.toString(a));
         DIntArray dIntArray = new DIntArray();
         System.out.println(Arrays.toString(dIntArray.arr));
-        dIntArray.add(2);
+        dIntArray.add(21);
         System.out.println(Arrays.toString(dIntArray.arr3));
 
         System.out.println();
