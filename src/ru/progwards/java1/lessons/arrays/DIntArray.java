@@ -24,10 +24,10 @@ class DIntArray {
        this.arr=arr3;
 }
     public void atDelete(int pos){
-//        int [] arr3  =new int [arr.length-1];
-//        System.arraycopy(arr,0,arr3,0,pos);
-//       System.arraycopy(arr,pos+1,arr3,pos,arr.length-pos-1);
-//        this.arr=arr3;
+        int [] arr3  =new int [arr.length];
+        System.arraycopy(arr,0,arr3,0,pos);
+       System.arraycopy(arr,pos+1,arr3,pos,arr.length-pos-1);
+        this.arr=arr3;
 
     }
     // вот тут верно???
