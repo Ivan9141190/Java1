@@ -62,6 +62,7 @@ public class Eratosthenes {
           int a[] = new int[] {-1,-3,-3,33,33,22};
         ArraySort arraySort = new ArraySort();
         arraySort.sort(a);
+
         System.out.println(Arrays.toString(a));
         DIntArray dIntArray = new DIntArray();
         System.out.println(Arrays.toString(dIntArray.arr));
