@@ -1,12 +1,17 @@
 package ru.progwards.java1.lessons.bitsworld;
 
-public class CheckBit {
+ class CheckBit {
 
-    public static int checkBit(byte value, int bitNumber) {
-        int res;
-        res = value << bitNumber;
+     public static int checkBit(byte value, int bitNumber) {
+         int res;
+         if (bitNumber == 0) {
+             res = 1 + value;}
 
-        return 1;
-    }
-}
+         else
+
+             res = value << bitNumber + 1;
+
+         return res;
+     }
+ }
 
