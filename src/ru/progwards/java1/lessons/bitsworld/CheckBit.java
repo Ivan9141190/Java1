@@ -9,7 +9,7 @@ package ru.progwards.java1.lessons.bitsworld;
 
          else
 
-             res = value << bitNumber&0b1;
+             res = value >> bitNumber&0b1;
 
          return res;
 
