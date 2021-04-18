@@ -7,7 +7,7 @@ public class CheckBit {
         res = value << bitNumber;
 
 
-        return res;
+        return 1;
     }
 }
 
