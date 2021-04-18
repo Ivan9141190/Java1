@@ -12,6 +12,7 @@ package ru.progwards.java1.lessons.bitsworld;
              res = value << bitNumber&0b1;
 
          return res;
+
      }
  }
 
