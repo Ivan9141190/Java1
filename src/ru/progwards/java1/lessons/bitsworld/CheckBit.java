@@ -5,11 +5,11 @@ package ru.progwards.java1.lessons.bitsworld;
      public static int checkBit(byte value, int bitNumber) {
          int res;
          if (bitNumber == 0) {
-             res = 1 + value;}
+             res = 0b1&value;}
 
          else
 
-             res = value << bitNumber + 1;
+             res = value << bitNumber&0b1;
 
          return res;
      }
