@@ -6,7 +6,6 @@ public class CheckBit {
         int res;
         res = value << bitNumber;
 
-
         return 1;
     }
 }
