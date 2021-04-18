@@ -4,8 +4,6 @@ public class SumBits {
 
     public static int sumBits(byte value){
 
-       //value = 0b010101;
-
         int a,b,c,d,e,f,g,h,result;
 
         a =0b1&value;
@@ -21,12 +19,20 @@ public class SumBits {
         return result;
     }
 
+    public static int checkBit(byte value, int bitNumber){
+int res;
+res = value<<bitNumber;
 
+
+       return res;
+    }
 
     public static void main(String[] args) {
 
-        System.out.println(sumBits((byte) 222));
+        System.out.println(sumBits((byte) -222));
         System.out.println(Integer.toBinaryString(sumBits((byte) 222)));
+        System.out.println(Integer.toBinaryString(checkBit((byte) 1,4)));
+        System.out.println(checkBit((byte) 10,4));
     }
 
         }
