@@ -4,9 +4,9 @@ public class Binary {
     public Binary(byte num){}
 
     public String toString() {
-byte res = 1;
-String str= toString();
-       return str;
+Binary binary = new Binary((byte)1);
+
+       return binary.toString();
         }
 
 
