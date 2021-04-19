@@ -21,6 +21,7 @@ public class SumBits {
 
 
     public static void main(String[] args) {
+        Binary binary = new Binary((byte) 10);
         System.out.println(Integer.toBinaryString(-6));
         System.out.println(sumBits((byte) -222));
         System.out.println(Integer.toBinaryString(sumBits((byte) 222)));
