@@ -1,7 +1,7 @@
 package ru.progwards.java1.lessons.bitsworld;
 
 public class SumBits {
-
+String t;
     public static int sumBits(byte value) {
 
         int a, b, c, d, e, f, g, h, result;
@@ -21,13 +21,21 @@ public class SumBits {
 
 
     public static void main(String[] args) {
-        Binary binary = new Binary((byte) 10);
+        Binary binary = new Binary((byte)8);
+        System.out.println(binary);
+//        System.out.println(new Binary((byte) -81).toString());
+//        System.out.println(new Binary((byte) 1).toString());
+//        System.out.println(new Binary((byte) 127).toString());
+//        System.out.println(new Binary((byte) -40).toString());
+//        System.out.println(new Binary((byte) -1).toString());
 
-        System.out.println(Integer.toBinaryString(-6));
         System.out.println(sumBits((byte) -222));
         System.out.println(Integer.toBinaryString(sumBits((byte) 222)));
         System.out.println(Integer.toBinaryString(CheckBit.checkBit((byte) 1,4)));
         System.out.println(CheckBit.checkBit((byte) 10,4));
     }
 
-        }
+
+    }
+
+
