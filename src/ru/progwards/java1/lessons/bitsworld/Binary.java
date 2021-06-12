@@ -23,16 +23,17 @@ public class Binary
 //    res = ((((1 << i) & num) == 0) ? "0" : "1") + res;
 
         return res;
+
     }
 
-//    public static void main(String[] args)
-//    {
-//        System.out.println(new Binary((byte) -81).toString());
-//        System.out.println(new Binary((byte) 1).toString());
-//        System.out.println(new Binary((byte) 127).toString());
-//        System.out.println(new Binary((byte) -40).toString());
-//        System.out.println(new Binary((byte) -1).toString());
-//    }
+    public static void main(String[] args)
+    {
+        System.out.println(new Binary((byte) -81).toString());
+        System.out.println(new Binary((byte) 1).toString());
+        System.out.println(new Binary((byte) 127).toString());
+        System.out.println(new Binary((byte) -40).toString());
+        System.out.println(new Binary((byte) -1).toString());
+    }
 }
 
 
