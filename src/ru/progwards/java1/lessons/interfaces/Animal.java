@@ -117,7 +117,7 @@ public class Animal {
 
     }
 
-    private FoodKind foodKind = FoodKind.UNKNOWN;
+    private FoodKind foodKind = FoodKind.HAY;
     public double getFood1kgPrice() {
         switch (foodKind) {
             case HAY: return 20d;
