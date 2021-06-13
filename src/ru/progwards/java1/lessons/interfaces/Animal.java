@@ -112,31 +112,56 @@ public class Animal {
         public double getFoodCoeff() {
             return 0.04;
         }}
+    static class Hamster extends Animal {
+
+        Hamster (double weight){ super(weight);
+        }
+
+        public AnimalKind getKind() {
+            return HAMSTER;
+        }
+
+        public FoodKind getFoodKind() {
+            return CORN;
+        }
+        public double getWeight(){
+            return weight;
+        }
+        public double getFoodCoeff(){
+            return 0.03;}
+    }
+
+
     public interface FoodCompare {
         int compareFoodPrice();
 
     }
 
-    private FoodKind foodKind = FoodKind.HAY;
+    FoodKind foodKind = FoodKind.HAY;
+    // информация о цене 1 кг еды
     public double getFood1kgPrice() {
         switch (foodKind) {
             case HAY: return 20d;
+
             case CORN: return 50d;
         }
         return 0;
     }
-    // возвращает информацию о цене еды для данного животного
+
+
     public double getFoodPrice() {
         return calculateFoodWeight() * getFood1kgPrice();
     }
 
     public static void main(String[] args) {
 
-
-Cow cow = new Cow(11.11);
+Hamster hamster =new Hamster(2.00);
+Cow cow = new Cow(1.00);
 Cow cow1 = new Cow(11.11);
-Duck duck = new Duck(11.11);
+Duck duck = new Duck(1.00);
         System.out.println(cow.equals(cow1));
         Animal animal = new Animal();
+        System.out.println(duck);
         System.out.println(cow.getFoodPrice());
+        System.out.println(hamster.getFoodPrice());
     }}

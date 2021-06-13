@@ -7,7 +7,7 @@ public class Animal {
         this.weight = weight;
     }
 
-    enum AnimalKind {ANIMAL, COW, HAMSTER, DUCK}
+    public enum AnimalKind {ANIMAL, COW, HAMSTER, DUCK}
 
     AnimalKind ANIMAL = AnimalKind.ANIMAL;
     AnimalKind COW = AnimalKind.COW;
