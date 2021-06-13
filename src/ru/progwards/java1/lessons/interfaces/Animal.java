@@ -210,6 +210,6 @@ Duck duck = new Duck(1.00);
         System.out.println(cow.getFoodPrice());
         System.out.println(hamster.getFoodPrice());
         Animal h = new Hamster(0.2);
-        Animal d = new Duck(3.2);
+        Animal d = new Duck(0.2);
         System.out.println(h.compareFoodPrice(d));
     }}
