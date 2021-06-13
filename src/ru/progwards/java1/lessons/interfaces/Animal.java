@@ -4,6 +4,7 @@ import java.util.Objects;
 
 public class Animal {
     double weight;
+    private Animal animal;
 
     public Animal(double weight) {
         this.weight = weight;
@@ -69,6 +70,21 @@ public class Animal {
         return "I am " + getKind() + ", eat " + getFoodKind() +" " +  calculateFoodWeight();
     }
 
+    FoodKind foodKind = FoodKind.UNKNOWN;
+    // информация о цене 1 кг еды
+    public double getFood1kgPrice() {
+        switch (foodKind) {
+            case HAY: return 20d;
+
+            case CORN: return 50d;
+        }
+        return 0;
+    }
+    public int compareFoodPrice(Animal aminal){
+        
+        return Double.compare(getFoodPrice(), aminal.getFoodPrice());
+    }
+
     static class Cow extends Animal {
 
         Cow(double weight) {
@@ -90,7 +106,21 @@ public class Animal {
         public double getFoodCoeff() {
             return 0.05;
         }
+
+        FoodKind foodKind = FoodKind.HAY;
+        // информация о цене 1 кг еды
+        public double getFood1kgPrice() {
+            switch (foodKind) {
+                case HAY: return 20d;
+
+                case CORN: return 50d;
+            }
+            return 0;
+        }
+
     }
+
+
     static class Duck extends Animal {
 
         Duck(double weight) {
@@ -111,7 +141,21 @@ public class Animal {
 
         public double getFoodCoeff() {
             return 0.04;
-        }}
+        }
+
+
+        FoodKind foodKind = FoodKind.CORN;
+        // информация о цене 1 кг еды
+        public double getFood1kgPrice() {
+            switch (foodKind) {
+                case HAY: return 20d;
+
+                case CORN: return 50d;
+            }
+            return 0;
+        }
+
+    }
     static class Hamster extends Animal {
 
         Hamster (double weight){ super(weight);
@@ -128,24 +172,25 @@ public class Animal {
             return weight;
         }
         public double getFoodCoeff(){
-            return 0.03;}
+            return 0.03;
+        }
+
+        FoodKind foodKind = FoodKind.CORN;
+        // информация о цене 1 кг еды
+        public double getFood1kgPrice() {
+            switch (foodKind) {
+                case HAY: return 20d;
+
+                case CORN: return 50d;
+            }
+            return 0;
+        }
     }
 
 
     public interface FoodCompare {
         int compareFoodPrice();
 
-    }
-
-    FoodKind foodKind = FoodKind.HAY;
-    // информация о цене 1 кг еды
-    public double getFood1kgPrice() {
-        switch (foodKind) {
-            case HAY: return 20d;
-
-            case CORN: return 50d;
-        }
-        return 0;
     }
 
 
@@ -164,4 +209,7 @@ Duck duck = new Duck(1.00);
         System.out.println(duck);
         System.out.println(cow.getFoodPrice());
         System.out.println(hamster.getFoodPrice());
+        Animal h = new Hamster(0.2);
+        Animal d = new Duck(3.2);
+        System.out.println(h.compareFoodPrice(d));
     }}
