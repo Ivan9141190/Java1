@@ -1,6 +1,5 @@
 package ru.progwards.java1.lessons.interfaces;
-
-//import java.util.Objects;
+import java.util.Objects;
 
 public class Animal {
     double weight;
@@ -60,15 +59,15 @@ public class Animal {
         return Double.compare(animal.weight, weight) == 0 && ANIMAL == animal.ANIMAL && COW == animal.COW && HAMSTER == animal.HAMSTER && DUCK == animal.DUCK && UNKNOWN == animal.UNKNOWN && HAY == animal.HAY && CORN == animal.CORN;
     }
 
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(weight, ANIMAL, COW, HAMSTER, DUCK, UNKNOWN, HAY, CORN);
-//    }
-//
-//    public String toStringFull() {
-//
-//        return "I am " + getKind() + ", eat " + getFoodKind() +" " +  calculateFoodWeight();
-//    }
+    @Override
+    public int hashCode() {
+        return Objects.hash(weight, ANIMAL, COW, HAMSTER, DUCK, UNKNOWN, HAY, CORN);
+    }
+
+    public String toStringFull() {
+
+        return "I am " + getKind() + ", eat " + getFoodKind() +" " +  calculateFoodWeight();
+    }
 
     FoodKind foodKind = FoodKind.UNKNOWN;
     // информация о цене 1 кг еды
@@ -84,115 +83,6 @@ public class Animal {
         
         return Double.compare(getFoodPrice(), aminal.getFoodPrice());
     }
-
-    static class Cow extends Animal {
-
-        Cow(double weight) {
-            super(weight);
-        }
-
-        public AnimalKind getKind() {
-            return COW;
-        }
-
-        public FoodKind getFoodKind() {
-            return HAY;
-        }
-
-        public double getWeight() {
-            return weight;
-        }
-
-        public double getFoodCoeff() {
-            return 0.05;
-        }
-
-        FoodKind foodKind = FoodKind.HAY;
-        // информация о цене 1 кг еды
-        public double getFood1kgPrice() {
-            switch (foodKind) {
-                case HAY: return 20d;
-
-                case CORN: return 50d;
-            }
-            return 0;
-        }
-
-    }
-
-
-    static class Duck extends Animal {
-
-        Duck(double weight) {
-            super(weight);
-        }
-
-        public AnimalKind getKind() {
-            return DUCK;
-        }
-
-        public FoodKind getFoodKind() {
-            return CORN;
-        }
-
-        public double getWeight() {
-            return weight;
-        }
-
-        public double getFoodCoeff() {
-            return 0.04;
-        }
-
-
-        FoodKind foodKind = FoodKind.CORN;
-        // информация о цене 1 кг еды
-        public double getFood1kgPrice() {
-            switch (foodKind) {
-                case HAY: return 20d;
-
-                case CORN: return 50d;
-            }
-            return 0;
-        }
-
-    }
-    static class Hamster extends Animal {
-
-        Hamster (double weight){ super(weight);
-        }
-
-        public AnimalKind getKind() {
-            return HAMSTER;
-        }
-
-        public FoodKind getFoodKind() {
-            return CORN;
-        }
-        public double getWeight(){
-            return weight;
-        }
-        public double getFoodCoeff(){
-            return 0.03;
-        }
-
-        FoodKind foodKind = FoodKind.CORN;
-        // информация о цене 1 кг еды
-        public double getFood1kgPrice() {
-            switch (foodKind) {
-                case HAY: return 20d;
-
-                case CORN: return 50d;
-            }
-            return 0;
-        }
-    }
-
-
-    public interface FoodCompare {
-        int compareFoodPrice();
-
-    }
-
 
     public double getFoodPrice() {
         return calculateFoodWeight() * getFood1kgPrice();
