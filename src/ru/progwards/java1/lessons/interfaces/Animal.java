@@ -1,6 +1,6 @@
 package ru.progwards.java1.lessons.interfaces;
 
-import java.util.Objects;
+//import java.util.Objects;
 
 public class Animal {
     double weight;
@@ -60,15 +60,15 @@ public class Animal {
         return Double.compare(animal.weight, weight) == 0 && ANIMAL == animal.ANIMAL && COW == animal.COW && HAMSTER == animal.HAMSTER && DUCK == animal.DUCK && UNKNOWN == animal.UNKNOWN && HAY == animal.HAY && CORN == animal.CORN;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(weight, ANIMAL, COW, HAMSTER, DUCK, UNKNOWN, HAY, CORN);
-    }
-
-    public String toStringFull() {
-
-        return "I am " + getKind() + ", eat " + getFoodKind() +" " +  calculateFoodWeight();
-    }
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(weight, ANIMAL, COW, HAMSTER, DUCK, UNKNOWN, HAY, CORN);
+//    }
+//
+//    public String toStringFull() {
+//
+//        return "I am " + getKind() + ", eat " + getFoodKind() +" " +  calculateFoodWeight();
+//    }
 
     FoodKind foodKind = FoodKind.UNKNOWN;
     // информация о цене 1 кг еды
