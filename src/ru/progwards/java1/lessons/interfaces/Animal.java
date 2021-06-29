@@ -1,15 +1,27 @@
 package ru.progwards.java1.lessons.interfaces;
 import java.util.Objects;
 
-public class Animal {
+public class Animal implements CompareWeight {
     double weight;
     private Animal animal;
 
     public Animal(double weight) {
         this.weight = weight;
     }
+    public CompareWeight.CompareResult compareWeight(double smthHasWeigt) {
 
-    public Animal() {
+        if (smthHasWeigt >= weight) {
+            return LESS;
+        } else {
+            if (smthHasWeigt == weight) {
+                return EQUAL;
+            }
+            if (smthHasWeigt <= weight) {
+                return GREATER;
+            }
+
+            return null;
+        }
 
     }
 
@@ -92,10 +104,11 @@ public class Animal {
 
 Hamster hamster =new Hamster(2.00);
 Cow cow = new Cow(1.00);
-Cow cow1 = new Cow(11.11);
+Cow cow1 = new Cow(1.00);
 Duck duck = new Duck(1.00);
+
         System.out.println(cow.equals(cow1));
-        Animal animal = new Animal();
+       // Animal animal = new Animal();
         System.out.println(duck);
         System.out.println(cow.getFoodPrice());
         System.out.println(hamster.getFoodPrice());
